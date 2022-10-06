@@ -1,0 +1,12 @@
+2022-10-07 00:27:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PLAYER TEAM [*]TEAM PLAYER"; SQL statement:
+SELECT * FROM PLAYER TEAM TEAM PLAYER [42000-214]
+2022-10-07 00:27:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PLAYER TEAM [*]TEAM PLAYER"; SQL statement:
+SELECT * FROM PLAYER TEAM TEAM PLAYER [42000-214]
+2022-10-07 00:28:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (TEAM: ""ID"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."TEAM"("ID","NAME")VALUES(?,?) [22018-214]
+2022-10-07 00:28:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (TEAM: ""ID"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."TEAM"("ID","NAME")VALUES(?,?) [22018-214]
