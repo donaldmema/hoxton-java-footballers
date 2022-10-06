@@ -25,6 +25,19 @@ public class TeamController {
         return teamRepo.findById(teamId).get();
     }
 
+    @GetMapping("/teams/{teamId}/score")
+    public int getTeamScore(@PathVariable Integer teamId) {
+        Team team = teamRepo.findById(teamId).get();
+        int score = 0;
+        for (Player player : team.players) {
+            if (player.isReplacement) {
+            } else {
+                score += player.scoreOutOfTen;
+            }
+        }
+        return score;
+    }
+
     @PostMapping("/teams")
     public Team createTeam(@RequestBody Team teamData) {
         return teamRepo.save(teamData);
